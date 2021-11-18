@@ -75,8 +75,8 @@ print(f'Максимальное число: {maximus}')
 Далее запросите численность сотрудников фирмы и определите прибыль фирмы 
 в расчете на одного сотрудника.
 '''
-vyruchka = int(input('Напишите Вашу выручку '))
-izderzhki = int(input('Напишите Вашу издержку '))
+vyruchka = float(input('Напишите Вашу выручку '))
+izderzhki = float(input('Напишите Вашу издержку '))
 zarabotok = vyruchka-izderzhki
 if zarabotok > 0:
     print('Ваша прибыль составляет:', zarabotok, ' руб.')
@@ -84,11 +84,11 @@ if zarabotok > 0:
 else:
     print('Ваш убыток составляет:', zarabotok, ' руб.')
 
-stuff = int(input('Сколько у Вас сотрудников? Введите число'))
+
 if zarabotok > 0:
+    stuff = int(input('Сколько у Вас сотрудников? Введите число'))
     print('Ваша прибыль на одного сотрудника:', zarabotok/stuff, ' руб.')
-else:
-    print('Ваш убыток на одного сотрудника:', zarabotok/stuff, ' руб.')
+
 
 '''
 6. Спортсмен занимается ежедневными пробежками. 
